@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { StyleSheet, Text, View, Image, Pressable, Linking } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { makeRedirectUri, useAuthRequest } from "expo-auth-session";
+import { useAuthRequest } from "expo-auth-session";
 import * as WebBrowser from "expo-web-browser";
 import { encode as btoa } from "base-64";
 import axios from "axios";

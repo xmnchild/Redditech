@@ -1,18 +1,7 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableHighlight,
-  TouchableWithoutFeedback,
-  Image,
-  Video,
-} from "react-native";
+import {StyleSheet,Text,View,TouchableHighlight,TouchableWithoutFeedback,Image, Video,} from "react-native";
 import { Divider } from "@rneui/themed";
 import { Avatar } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
-import FooterPost from "./FooterPost";
-import { getToken } from "../store/token";
-import { FastImage } from "react-native-fast-image";
 import * as React from "react";
 import Icon from "react-native-vector-icons/Ionicons";
 

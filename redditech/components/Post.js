@@ -1,19 +1,8 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  ScrollView,
-  TouchableWithoutFeedback,
-  Dimensions,
-  TouchableHighlight,
-} from "react-native";
-import { Avatar, Divider, Header, SearchBar } from "@rneui/themed";
+import {StyleSheet,Text,View,ScrollView,Dimensions,} from "react-native";
+import { Avatar, Header } from "@rneui/themed";
 import Icon from "react-native-vector-icons/Ionicons";
 import { Button } from "@rneui/base";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
-import Navbar from "./Header";
-import FooterPost from "./FooterPost";
 import PostFeed from "./PostFeed";
 import { useRecoilState } from "recoil";
 import { tokenAtom } from "../helpers/UserState";
