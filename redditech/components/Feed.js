@@ -68,7 +68,7 @@ function Feed() {
             }
         })
             .then(response => {
-                if (response.status == 200) {
+                if (response.status === 200) {
                     return response.json();
                 }
                 throw new Error("false");
