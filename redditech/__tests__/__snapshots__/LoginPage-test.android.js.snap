@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "marginTop": 100,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 250,
+        "marginVertical": 50,
+        "width": 250,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+  />
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#ff5700",
+        "borderRadius": 40,
+        "paddingHorizontal": 40,
+        "paddingVertical": 10,
+      }
+    }
+    title="Login"
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 20,
+        }
+      }
+    >
+      Log in with your Reddit account
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginBottom": 100,
+        "marginTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      New to Reddit? 
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "padding": 0,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "navy",
+            "fontSize": 16,
+          }
+        }
+      >
+        Sign up
+      </Text>
+    </View>
+  </View>
+</View>
+`;

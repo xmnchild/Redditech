@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant LoginPage
+participant Feed
+participant Recoil
+participant "/api/v1/authorize"
+participant "/prefs/apps"
+participant "/api/v1/access_token"
+participant "/subreddits/mine/subscriber" as subscribed
+participant "/subreddit" as subreddit
+
+-> LoginPage
+LoginPage -> "/api/v1/authorize" : get authorization Code
+"/api/v1/authorize" -> "/prefs/apps" : verify App identifier & callback URL
+"/prefs/apps" --> LoginPage : code
+LoginPage -> "/api/v1/access_token" : get token w/ code
+"/api/v1/access_token" --> LoginPage : token
+LoginPage -> Recoil : store token
+LoginPage -> Feed : redirection
+Feed -> Recoil : get token
+Recoil --> Feed : token
+Feed -> subscribed : get subscribed subreddit list
+subscribed --> Feed : subscribed subreddit list
+Feed -> subreddit : get posts
+subreddit -> Feed : posts
+Feed -> PostFeed : display posts
+
+@enduml

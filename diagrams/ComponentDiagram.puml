@@ -1,0 +1,43 @@
+@startuml
+
+
+[*] --> App
+state App {
+    state Recoil {
+        Recoil : TOKEN
+        state Route {
+            state NavigationContainer {
+                [*] --> HomeNavigator : with token
+                [*] --> AuthNavigator : without token
+                state HomeNavigator {
+                    state Feed : Actually a home page
+                    state Settings
+                    state Profile
+                    state Subreddit
+                    state PostFeed
+                    state Post
+                    [*] --> Feed
+                    Feed --> PostFeed
+                    Feed --> Profile
+                    Feed --> Settings
+                    Profile --> UserPost
+                    UserPost --> PostFeed
+                    PostFeed --> Post : onPress
+                    PostFeed --> Subreddit : onPressAvatar
+                }
+                state AuthNavigator {
+                    state LoginPage
+                }
+                LoginPage --> Recoil : stock token
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@enduml
